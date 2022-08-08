@@ -1,0 +1,143 @@
+/**********************************************
+      VARS SECTION 
+**********************************************/
+:root {
+    --primary-color: #fb7413;
+    --color-white: #fff;
+    --color-light-gray: #959eac;
+    --color-medium-gray: #7c8798;
+    --color-dark-blue: #1A212B;
+    --color-very-blue: #212832;
+    --color-body-background: #141519;
+}
+
+/**********************************************
+      COMMON ELEMENTS SECTION 
+**********************************************/
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--color-body-background);
+    padding: 20px 0;
+    margin: 0;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+/**********************************************
+      RATINGS CONTAINER SECTION 
+**********************************************/
+
+/******  RATINGS BODY ***************/
+section {
+    background-color: var(--color-very-blue);
+    padding: 25px 35px;
+    max-width: 350px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        border-radius: 10px;
+    }
+}
+
+.icon-star {
+    display: inline-block;
+    background-color: var(--color-dark-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-star img {
+    width: 100%;
+    max-width: 25px;
+    height: auto;
+}
+
+h2 {
+    color: var(--color-white);
+}
+
+p {
+    color: var(--color-light-gray);
+}
+
+/******  RATINGS  ***************/
+
+ul.ratings {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+ul.ratings li {
+    background-color: var(--color-dark-blue);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    color: var(--color-light-gray)
+}
+
+ul.ratings li:hover {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+ul.ratings li.selected {
+    background-color: var(--color-medium-gray);
+    color: var(--color-white);
+}
+
+ul.ratings li input[type="radio"] {
+    visibility: hidden;
+}
+
+button {
+    width: 100%;
+    border-radius: 35px;
+    height: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+button:hover {
+    color: var(--primary-color);
+    background-color: var(--color-white);
+}
+
+/***** SUBMIT SUCCESS **************/
+section#submit-success {
+    text-align: center;
+}
+
+section#submit-success .rating p{
+    border-radius: 20px;
+    background-color: var(--color-dark-blue);
+    color: var(--primary-color);
+    padding: 15px 20px;
+    max-width: 250px;
+    margin: 20px auto;
+}
+
