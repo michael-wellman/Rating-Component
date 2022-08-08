@@ -30,6 +30,22 @@ body {
     display: block;
 }
 
+footer {
+    color: var(--color-white);
+    min-height: 200px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
 /**********************************************
       RATINGS CONTAINER SECTION 
 **********************************************/
